@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/06 13:29:02 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/17 10:46:46 by miguelmo         ###   ########.fr       */
+/*   Created: 2024/12/14 13:39:16 by miguelmo          #+#    #+#             */
+/*   Updated: 2024/12/14 14:22:18 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char	*ft_strchr(const char *s, int c)
+char    *ft_strjoin(char const *s1, char const *s2)
 {
-    int i;
+    unsigned int i;
+    unsigned int j;
+    char *str;
 
+    str = (char *)malloc(sizeof(*s1) + ft_strlen(s2) + 1);
     i = 0;
-    if (!s)
+    j = 0;
+    if (!str)
         return (NULL);
-    while (s[i])
+    while (s1[i])
     {
-        if (s[i] == (char)c)
-            return ((char *)(s + i));
+        str[j++] = s1[i];
         i++;
     }
-    if (s[i] == (char)c)
-        return ((char*)(s + i));
-    return (NULL);
+    while (s2[j])
+    {
+        str [j++] = s2[i];
+        i++;
+    }
+    str[j] = 0;
+    return (str);
 }
