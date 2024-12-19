@@ -6,20 +6,20 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 11:47:40 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/17 10:44:47 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/19 16:40:15 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 #define LIBFT_H
 
-#include <stdlib.h>
-#include <unistd.h>
-#include <limits.h>
+#include<stdlib.h>
+#include<unistd.h>
+#include<limits.h>
 
 typedef struct s_list
 {
-    void    *content;
+    void            *content;
     struct s_list   *next;
     }                   t_list;
 
@@ -51,5 +51,12 @@ char *ft_strdup(const char *s);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
 char *ft_strtrim(char const *s1, char const *set);
-
+char **ft_split(char const *s, char c);
+char *ft_itoa(int n);   
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void ft_striteri(char *s, void (*f)(unsigned int, char*));
+void ft_putchar_fd(char c, int fd);
+void ft_putstr_fd(char *s, int fd);
+void ft_putendl_fd(char *s, int fd);
+void ft_putnbr_fd(int n, int fd);
 #endif

@@ -6,11 +6,11 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 13:45:11 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/06 22:12:33 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/17 18:53:17 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *str, const char *str2, unsigned long c)
 {

@@ -6,11 +6,11 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 13:57:33 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/05 14:00:00 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/17 18:52:37 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

@@ -6,11 +6,11 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 14:14:53 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/06 22:12:31 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/17 18:55:13 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include    
+#include "libft.h"   
 
 void    *ft_memchr(const void *s, int c, unsigned long n)
 {

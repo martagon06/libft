@@ -6,11 +6,11 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 18:49:29 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/13 18:57:12 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/17 18:52:27 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft>
+#include "libft.h"
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {

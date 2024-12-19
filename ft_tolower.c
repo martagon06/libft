@@ -6,11 +6,11 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 14:00:29 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/05 14:02:32 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/17 18:52:34 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int ft_tolower(int c)
 {

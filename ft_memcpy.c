@@ -6,11 +6,11 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 13:10:36 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/05 13:14:52 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/17 18:54:34 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft>
+#include "libft.h"
 
 int ft_memcpy(const void *src,void *dest, unsigned long size)
 {

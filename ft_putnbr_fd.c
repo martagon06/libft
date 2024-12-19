@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/04 11:45:09 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/19 15:51:54 by miguelmo         ###   ########.fr       */
+/*   Created: 2024/12/19 16:31:25 by miguelmo          #+#    #+#             */
+/*   Updated: 2024/12/19 16:39:53 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned long   ft_strlen(const char *str)
+void ft_putnbr_fd(int n, int fd)
 {
-    unsigned long i;
+    char *str;
     
-    i = 0;
-    while (str[i])
-        i++;
-    return (i);
+    str = ft_itoa(n);
+    ft_putstr_fd(str, fd);
 }
