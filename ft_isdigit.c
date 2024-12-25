@@ -12,10 +12,9 @@
 
 #include <libft.h>
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    while (c >= 0 && c <= 9)
-        return (c);
-    return(0);
+	while (c >= 0 && c <= 9)
+		return (c);
+	return (0);
 }
-
