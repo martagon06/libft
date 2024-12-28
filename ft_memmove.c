@@ -6,16 +6,16 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 13:16:42 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/05 13:38:31 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/27 16:37:29 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-int	ft_memmove(char *dest, const char *src, unsigned long size)
+void	*ft_memmove(void *dest, const void *src, size_t size)
 {
-	char	*d;
-	char	*s;
+	char		*d;
+	const char	*s;
 
 	d = (char *)dest;
 	s = (char *)src;
@@ -25,8 +25,7 @@ int	ft_memmove(char *dest, const char *src, unsigned long size)
 		ft_memcpy(d, s, size);
 	else
 	{
-		while (size--)
-			d[size] = s[size];
+		return (ft_memcpy(dest, src, size));
 	}
 	return (d);
 }

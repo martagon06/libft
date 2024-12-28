@@ -6,11 +6,11 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/14 13:39:16 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/14 14:22:18 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/27 16:26:23 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

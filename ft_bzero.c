@@ -6,11 +6,11 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 13:06:19 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/05 13:10:05 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/27 16:24:12 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_bzero(void *str, unsigned long size)
 {

@@ -6,11 +6,11 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 18:20:38 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/17 18:41:07 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/27 16:25:56 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 static size_t	ft_countwords(const char *s, char c)
 {
@@ -22,7 +22,7 @@ static size_t	ft_countwords(const char *s, char c)
 		if (*s != c)
 		{
 			++ret;
-			while (*s && != c)
+			while (*s && *s != c)
 				++s;
 		}
 		else
@@ -38,7 +38,7 @@ char	**ft_split(char const *s, char c)
 	size_t			s_len;
 
 	i = 0;
-	str = (char **)malloc(ft_countwords((s, c) + 1) * sizeof(char *));
+	str = (char **)malloc((ft_countwords(s, c) + 1) * sizeof(char *));
 	if (!s || !str)
 		return (0);
 	while (*s)

@@ -6,15 +6,13 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 11:06:03 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/04 11:57:38 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/27 16:25:01 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
-	while (c >= 0 && c <= 9)
-		return (c);
-	return (0);
+	return (c >= '0' && c <= '9');
 }

@@ -6,28 +6,31 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 20:15:56 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/11 20:38:02 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/27 16:26:13 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {
-	unsigned long	i;
-	char			*str;
+	int		i;
+	int		j;
+	char	*str;
 
 	i = 0;
-	if (!s)
-		return (0);
-	str = (char *)malloc(sizeof(*s) * (ft_strlen(s) + 1));
-	if (!str)
-		return (0);
+	j = 0;
 	while (s[i])
 	{
-		str[i] == s[i];
 		i++;
 	}
-	str[i] = 0;
+	str = (char *)malloc((i + 1) * sizeof(char));
+	while (j <= i)
+	{
+		str[j] = s[j];
+		j++;
+	}
+	if (str == NULL)
+		return (NULL);
 	return (str);
 }

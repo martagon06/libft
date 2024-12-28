@@ -6,15 +6,13 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 11:19:17 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/04 11:57:58 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/27 16:24:53 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
-	while (c >= 0 && c <= 127)
-		return (c);
-	return (0);
+	return (c >= 0 && c <= 127);
 }

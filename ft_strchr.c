@@ -6,11 +6,11 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 13:29:02 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/25 21:51:01 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/27 16:26:04 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {

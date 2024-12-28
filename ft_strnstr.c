@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, unsigned long len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	unsigned long	needle_len;
-	unsigned long	i;
+	size_t	needle_len;
+	size_t	i;
 
 	needle_len = ft_strlen(little);
 	i = 0;

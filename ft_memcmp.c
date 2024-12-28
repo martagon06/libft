@@ -6,11 +6,11 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 14:27:09 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/17 18:34:58 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/27 16:27:29 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, unsigned long n)
 {
