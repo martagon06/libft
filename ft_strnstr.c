@@ -6,7 +6,7 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 11:16:56 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/17 18:53:12 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/28 11:17:59 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		return ((char *)big);
 	while (i + needle_len <= len)
 	{
-		if (ft_strcmp(big[i], little, needle_len) == 0)
-			return ((char *)big[i]);
+		if (ft_strncmp(big + i, little, needle_len) == 0)
+			return ((char *)big + i);
 		i++;
 	}
 	return (0);

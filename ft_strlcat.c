@@ -6,7 +6,7 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 13:40:32 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/27 16:27:42 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/28 11:30:52 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,8 @@ unsigned long	ft_strlcat(char *dest, const char *src, unsigned long size)
 	unsigned long	dest_length;
 	unsigned long	src_length;
 
-	i = 0;
-	src_length = ft_strlen(dest);
-	dest_length = ft_strlen(src);
+	dest_length = ft_strlen(dest);
+	src_length = ft_strlen(src);
 	if (size <= dest_length)
 		return (size + src_length);
 	i = 0;

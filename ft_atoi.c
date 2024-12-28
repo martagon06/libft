@@ -6,34 +6,40 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/07 11:47:31 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/27 16:23:45 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/28 11:55:10 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+int	ft_isspace(int c)
+{
+	return ((c >= 9 && c <= 13) || c == 32);
+}
+
 int	ft_atoi(const char *str)
 {
-	unsigned long	result;
-	unsigned long	i;
-	unsigned long	sign;
+	int		sign;
+	long	ret;
 
-	i = 0;
-	result = 0;
+	ret = 0;
 	sign = 1;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n')
-		i++;
-	while (str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
-		i++;
-	while (str[i] == '-')
+	while (ft_isspace(*str))
+		++str;
+	if (*str == '+' || *str == '-')
 	{
-		sign = sign * (-1);
-		i++;
+		if (*str == '-')
+			sign = -1;
+		str++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (ft_isdigit(*str))
 	{
-		result = result * 10 + (str[i] - '0');
-		i++;
+		ret = ret * 10 + (*str - '0');
+		if (ret > INT_MAX && sign == 1)
+			return (INT_MAX);
+		if (ret > (long)INT_MAX + 1 && sign == -1)
+			return (INT_MIN);
+		str++;
 	}
-	return (sign * result);
+	return ((int)(ret * sign));
 }

@@ -6,7 +6,7 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/19 16:31:25 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/19 16:39:53 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/28 12:19:24 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,17 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*str;
+	int		sign;
+	char	c;
 
-	str = ft_itoa(n);
-	ft_putstr_fd(str, fd);
+	sign = 1;
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		sign = -1;
+	}
+	if (n / 10)
+		ft_putnbr_fd(n / 10 * sign, fd);
+	c = '0' + n % 10 * sign;
+	ft_putchar_fd(c, fd);
 }
