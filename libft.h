@@ -6,7 +6,7 @@
 /*   By: miguelmo <miguelmo@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 11:47:40 by miguelmo          #+#    #+#             */
-/*   Updated: 2024/12/27 17:39:15 by miguelmo         ###   ########.fr       */
+/*   Updated: 2024/12/28 18:42:34 by miguelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *str, const char *str2, unsigned long c);
 void	*ft_memchr(const void *s, int c, unsigned long n);
-int		memcmp(const void *s1, const void *s2, unsigned long n);
+int		ft_memcmp(const void *s1, const void *s2, unsigned long n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *ptr);
 void	*ft_calloc(unsigned long nmemb, unsigned long size);
