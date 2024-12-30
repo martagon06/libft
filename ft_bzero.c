@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-void	ft_bzero(void *str, unsigned long size)
+void	ft_bzero(void *str, size_t size)
 {
-	unsigned long	i;
-	char			*s;
+	size_t	i;
+	char	*s;
 
 	i = 0;
 	s = (char *)str;
